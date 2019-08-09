@@ -1,9 +1,31 @@
-<h1>Cocktails</h1>
+<div class="home-banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_url("kaizen-nguy-n-jcLcWL8D7AQ-unsplash.jpg") %>);">
+  <div class="container">
+    <h1>Cocktails</h1>
+    <p>Share your own amazing drinks to the world!</p>
+    <a class="btn btn-primary" href="#">Start now</a>
+  </div>
+</div>
+<a style="background-color:black;color:white;text-decoration:none;padding:4px 6px;font-family:-apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;, &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto, &quot;Segoe UI&quot;, Arial, sans-serif;font-size:12px;font-weight:bold;line-height:1.2;display:inline-block;border-radius:3px" href="https://unsplash.com/@kaizennguyen?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Kaizen Nguyễn"><span style="display:inline-block;padding:2px 3px"><svg xmlns="http://www.w3.org/2000/svg" style="height:12px;width:auto;position:relative;vertical-align:middle;top:-2px;fill:white" viewBox="0 0 32 32"><title>unsplash-logo</title><path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path></svg></span><span style="display:inline-block;padding:2px 3px">Kaizen Nguyễn</span></a>
 
+<div class="container">
 <ul>
   <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
+    <li>
+<!--       <%= cl_image_tag cocktail.photo, height: 300, width: 400, crop: :fill %> -->
+      <%= link_to cocktail.name, cocktail_path(cocktail) %>
+    </li>
+    <!-- <div class="card"
+  style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+         url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>')">
+      <div class="card-category">Popular</div>
+      <div class="card-description">
+        <h2>Some stuff</h2>
+        <p>Very cool stuff, useful and smart</p>
+      </div>
+      <a class="card-link" href="#" ></a>
+    </div> -->
   <% end %>
 </ul>
 
 <%= link_to "Add new cocktail", new_cocktail_path %>
+</div>
