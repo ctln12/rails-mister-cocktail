@@ -12,6 +12,6 @@ url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients_serialized = open(url).read
 ingredients = JSON.parse(ingredients_serialized)
 
-10.times do
+30.times do
   Ingredient.create(name: ingredients['drinks'].sample['strIngredient1'])
 end
