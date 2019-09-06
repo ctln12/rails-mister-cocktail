@@ -1,24 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Rails: Front-End
 
-Things you may want to cover:
+Exercise from Le Wagon Full Stack Challenges
 
-* Ruby version
+### Objective:
 
-* System dependencies
+Implement a 3-model app introducing a many to many relationship (n:n)!
 
-* Configuration
+So what's the deal? Well, it's time to build a cocktail manager. We want to store our favourite cocktails, and their recipes (http://localhost:3000/).
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Note: lacks style*
