@@ -71,3 +71,16 @@ a:hover {
 .show-btn-home a:hover {
   color: white;
 }
+
+// -------------------- NEW ------------------
+.new-cocktail .btn.btn-danger {
+  background-color: #C02B28;
+  border: #C02B28;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.new-cocktail .btn.btn-danger:hover {
+  background-color: #FD1015;
+  border: #FD1015;
+}
