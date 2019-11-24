@@ -1,3 +1,10 @@
-// Place all the styles related to the cocktails controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.home-card {
+  border: none;
+  box-shadow: 1px 1px 4px black;
+  color: white;
+  text-shadow: 1px 2px 3px black;
+}
+
+.home-card:hover {
+  filter: grayscale(1);
+}
