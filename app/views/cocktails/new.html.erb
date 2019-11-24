@@ -1,8 +1,16 @@
-<h1>Add a new cocktail</h1>
+<div class="container new-cocktail my-3">
+  <h1>Add a new cocktail</h1>
 
-<%= simple_form_for @cocktail do |f| %>
-  <%= f.input :name %>
-  <%= f.input :photo %>
-  <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit "Add", class: "btn btn-primary" %>
-<% end %>
+  <%= simple_form_for @cocktail do |f| %>
+    <%= f.input :name %>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
+    <%= f.submit "Add", class: "btn btn-danger" %>
+  <% end %>
+  <div class="show-btn-home my-2">
+    <%= link_to root_path do %>
+      <i class="fas fa-chevron-left"></i>
+      <span> Back to cocktails</span>
+    <% end %>
+  </div>
+</div>
