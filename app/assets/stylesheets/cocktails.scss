@@ -1,3 +1,5 @@
+// ----------------- EDIT --------------------
+
 .home-card {
   border: none;
   box-shadow: 1px 1px 4px black;
@@ -7,4 +9,34 @@
 
 .home-card:hover {
   filter: grayscale(1);
+}
+
+// ----------------- SHOW --------------------
+
+.show-container {
+  min-height: 100vh;
+  background-color: #C02B28;
+}
+
+.show-card {
+  border: none;
+  box-shadow: 1px 1px 3px black;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+img.card-img {
+  border-radius: 10px 0px 0px 10px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 576px) {
+  img.card-img {
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+  }
+}
+
+.card-img {
+  height: 100%;
 }
