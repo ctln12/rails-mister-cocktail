@@ -7,8 +7,13 @@
   text-shadow: 1px 2px 3px black;
 }
 
-.home-card:hover {
+.home-card-link:hover img.card-img {
   filter: grayscale(1);
+}
+
+.home-card-link:hover h5 {
+  color: #C02B28;
+  text-shadow: 1px 1px 2px black;
 }
 
 // ----------------- SHOW --------------------
