@@ -55,6 +55,19 @@ a:hover {
   height: 100%;
 }
 
+.show-card a.btn.btn-outline-danger {
+  border: 1px solid #C02B28;
+  color: #C02B28;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.show-card a.btn.btn-outline-danger:hover {
+  background-color: #C02B28;
+  color: white;
+  border: 1px solid #C02B28;
+}
+
 .show-btn-home a:hover {
   color: white;
 }
