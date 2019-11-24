@@ -1,3 +1,12 @@
+// --------------- GENERAL -------------------
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 // ----------------- EDIT --------------------
 
 .home-card {
@@ -44,4 +53,8 @@
 
 .show-card .card-img {
   height: 100%;
+}
+
+.show-btn-home a:hover {
+  color: white;
 }
