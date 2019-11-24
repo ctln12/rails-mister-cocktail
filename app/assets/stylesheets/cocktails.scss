@@ -30,18 +30,18 @@
   border-radius: 10px;
 }
 
-img.card-img {
+.show-card img.card-img {
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
 
 @media only screen and (max-width: 576px) {
-  img.card-img {
+  .show-card img.card-img {
     border-radius: 10px 10px 0px 0px;
     object-fit: cover;
   }
 }
 
-.card-img {
+.show-card .card-img {
   height: 100%;
 }
