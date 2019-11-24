@@ -26,7 +26,10 @@
             </div>
             <div class="card-text">
               <small class="text-muted">
-                <%= link_to "Add a dose", new_cocktail_dose_path(@cocktail) %>
+                <%= link_to new_cocktail_dose_path(@cocktail), class: "btn btn-outline-danger" do %>
+                <i class="fas fa-plus"></i>
+                <span> ingredient</span>
+                <% end %>
               </small>
             </div>
           </div>
