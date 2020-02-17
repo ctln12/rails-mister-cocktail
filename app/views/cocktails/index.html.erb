@@ -14,11 +14,6 @@
             <%= cl_image_tag cocktail.photo, class: "card-img" %>
             <div class="card-img-overlay">
               <div class="card-title"><h5><%= cocktail.name %></h5></div>
-              <div class="card-text">
-                <% cocktail.ingredients.each do |ingredient| %>
-                  <p>-<% ingredient.name %></p>
-                <% end %>
-              </div>
             </div>
           </div>
         </div>
