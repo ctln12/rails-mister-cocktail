@@ -7,25 +7,24 @@ a:hover {
   text-decoration: none;
 }
 
-// -------------- EDIT COCKTAIL --------------
+// -------------- COCKTAIL INDEX --------------
 
 .home-card {
   border: none;
-  box-shadow: 1px 1px 4px black;
+  box-shadow: 2px 3px 4px #888;
   color: white;
   text-shadow: 1px 2px 3px black;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
 }
 
-.home-card-link:hover img.card-img {
-  filter: grayscale(1);
+.home-card-link:hover .home-card {
+  transform: scale(1.05);
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
 }
 
-.home-card-link:hover h5 {
-  color: #c02b28;
-  text-shadow: 1px 1px 2px black;
-}
-
-// ------------- SHOW COCKTAIL ---------------
+// ------------- COCKTAIL SHOW ---------------
 .cocktail-container {
   width: 80%;
   margin: 0 auto;
