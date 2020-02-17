@@ -21,83 +21,108 @@ a:hover {
 }
 
 .home-card-link:hover h5 {
-  color: #C02B28;
+  color: #c02b28;
   text-shadow: 1px 1px 2px black;
 }
 
 // ------------- SHOW COCKTAIL ---------------
-
-.show-container {
-  min-height: 100vh;
-  background-color: #C02B28;
+.cocktail-container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.show-card {
-  border: none;
-  box-shadow: 1px 1px 3px black;
-  max-width: 100%;
-  border-radius: 10px;
+.img-frame {
+  text-align: center;
 }
 
-.show-card img.card-img {
-  border-radius: 10px 0px 0px 10px;
-  object-fit: cover;
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 
-@media only screen and (max-width: 576px) {
-  .show-card img.card-img {
-    border-radius: 10px 10px 0px 0px;
-    object-fit: cover;
+img.cocktail-photo {
+  width: 240px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ingredients-title-border {
+  width: 1.4rem;
+  margin: auto auto auto 2rem;
+  border: 2px solid #626957;
+}
+
+.fit-content-width {
+  width: fit-content;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.x-margins {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.ingredient:hover {
+  .hidden {
+    opacity: 1;
   }
 }
 
-.show-card .card-img {
-  height: 100%;
-}
-
-.show-card a.btn.btn-outline-danger {
-  border: 1px solid #C02B28;
-  color: #C02B28;
-  padding: 5px 10px;
-  border-radius: 10px;
-}
-
-.show-card a.btn.btn-outline-danger:hover {
-  background-color: #C02B28;
+.btn-success {
+  background-color: #4c7500;
+  border-color: #4c7500;
   color: white;
-  border: 1px solid #C02B28;
+
+  &:hover {
+    background-color: rgba(76, 117, 0, 0.9);
+    border-color: rgba(76, 117, 0, 0.9);
+    color: white;
+  }
 }
 
-.show-btn-home a:hover {
-  color: white;
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
 
 // ---------------- NEW COCKTAIL -------------
 .new-cocktail .btn.btn-danger {
-  background-color: #C02B28;
-  border: #C02B28;
+  background-color: #c02b28;
+  border: #c02b28;
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 .new-cocktail .btn.btn-danger:hover {
-  background-color: #FD1015;
-  border: #FD1015;
+  background-color: #fd1015;
+  border: #fd1015;
 }
 
 .new-btn-home a:hover {
-  color: #C02B28;
+  color: #c02b28;
 }
 
 // ------------------ NEW DOSE ---------------
 .new-dose .btn.btn-danger {
-  background-color: #C02B28;
-  border: #C02B28;
+  background-color: #c02b28;
+  border: #c02b28;
   padding: 10px 15px;
   border-radius: 10px;
 }
 
 .new-dose .btn.btn-danger:hover {
-  background-color: #FD1015;
-  border: #FD1015;
+  background-color: #fd1015;
+  border: #fd1015;
 }
