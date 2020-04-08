@@ -2,10 +2,16 @@
 .new-cocktail, .new-dose {
   margin: 60px auto;
   padding: 0;
-  width: 35%;
+  width: 500px;
   border-radius: 2px;
   box-shadow: 1px 2px 3px #bdbcbc;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .new-cocktail, .new-dose {
+    width: 450px;
+  }
 }
 
 #new-cocktail-title, #new-dose-title {
@@ -40,13 +46,17 @@ div.cocktail_photo {
   text-align: left;
 }
 
-input[type='file'] {
-  color: transparent;
+input[type='file' i] {
+  color: #585858;
+  font-weight: lighter;
 }
+
 input#cocktail_photo {
   margin-bottom: 30px;
   &::-webkit-file-upload-button {
     visibility: hidden;
+    padding-top: 20px;
+    text-indent: 30px;
   }
   &::before {
     display: inline-block;
@@ -60,6 +70,7 @@ input#cocktail_photo {
     border-radius: 3px;
   }
 }
+
 input#cocktail_photo:hover::before {
   background-color: #c02b28;
   color: white;
@@ -69,6 +80,7 @@ input#cocktail_photo:hover::before {
   color: #585858;
   font-size: 0.9rem;
 }
+
 .new-btn-home a:hover {
   color: #c02b28;
 }
