@@ -1,0 +1,74 @@
+// ---------------- NEW COCKTAIL -------------
+.new-cocktail, .new-dose {
+  margin: 60px auto;
+  padding: 0;
+  width: 35%;
+  border-radius: 2px;
+  box-shadow: 1px 2px 3px #bdbcbc;
+  text-align: center;
+}
+
+#new-cocktail-title, #new-dose-title {
+  padding: 70px 0 30px 0;
+  text-align: center;
+  border-radius: 2px 2px 0 0;
+  background-color: #c02b28;
+  color: white;
+}
+
+#new-cocktail-body, #new-dose-body {
+  padding: 20px 60px 10px 60px;
+}
+
+div.cocktail_name {
+  text-align: left;
+}
+
+input#cocktail_name {
+  border: none;
+  border-bottom:1px solid #c02b28;
+  border-radius: 0;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  &::placeholder {
+    color: #c02b28;
+    font-weight: lighter;
+  }
+}
+
+div.cocktail_photo {
+  text-align: left;
+}
+
+input[type='file'] {
+  color: transparent;
+}
+input#cocktail_photo {
+  margin-bottom: 30px;
+  &::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  &::before {
+    display: inline-block;
+    content: "Choose a file";
+    cursor: pointer;
+    color: #c02b28;
+    font-weight: lighter;
+    border: 1px solid #c02b28;
+    padding: 5px 10px;
+    margin: 10px 0 10px 0;
+    border-radius: 3px;
+  }
+}
+input#cocktail_photo:hover::before {
+  background-color: #c02b28;
+  color: white;
+}
+
+.new-btn-home a {
+  color: #585858;
+  font-size: 0.9rem;
+}
+.new-btn-home a:hover {
+  color: #c02b28;
+}

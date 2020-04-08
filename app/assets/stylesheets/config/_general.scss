@@ -1,0 +1,21 @@
+// --------------- GENERAL -------------------
+a {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn.btn-danger {
+  background-color: #c02b28;
+  border: #c02b28;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+
+.btn.btn-danger:hover {
+  background-color: #a50e0b;
+  border: #a50e0b;
+}

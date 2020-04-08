@@ -1,0 +1,31 @@
+// ------------------ NEW DOSE ---------------
+div.dose_ingredient {
+  text-align: left;
+}
+
+div.dose_description {
+  text-align: left;
+}
+
+select#dose_ingredient_id, textarea#dose_description {
+  border: 1px solid #c02b28;
+  margin-bottom: 30px;
+  color: #c02b28;
+  font-weight: lighter;
+}
+
+textarea#dose_description::placeholder {
+  color: #c02b28;
+}
+
+.new-dose .btn.btn-danger {
+  background-color: #c02b28;
+  border: #c02b28;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+.new-dose .btn.btn-danger:hover {
+  background-color: #a50e0b;
+  border: #a50e0b;
+}

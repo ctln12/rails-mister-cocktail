@@ -1,0 +1,71 @@
+// ------------- COCKTAIL SHOW ---------------
+.cocktail-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.img-frame {
+  text-align: center;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+img.cocktail-photo {
+  width: 240px;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-times-circle {
+  vertical-align: super;
+  color: #585858;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+.ingredients-title-border {
+  width: 1.4rem;
+  margin: auto auto auto 2rem;
+  border: 2px solid #c02b28;
+}
+
+.fit-content-width {
+  width: fit-content;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.x-margins {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.ingredient:hover {
+  cursor: pointer;
+  .hidden {
+    opacity: 1;
+  }
+}
+
+.fa-minus-square {
+  color: #c02b28;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
