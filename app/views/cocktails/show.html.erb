@@ -8,24 +8,29 @@
   <div class="row">
     <div class="col-lg-4 col-xl-5 img-frame">
       <span class="helper"></span>
-      <%= cl_image_tag @cocktail.photo, class: "cocktail-photo" %>
+      <%= cl_image_tag @cocktail.photo, aspect_ratio:"1", crop: "fill", class: "cocktail-photo" %>
     </div>
     <div class="col-lg-8 col-xl-7">
-      <h1 class="fit-content-width center my-4"><%= @cocktail.name %></h1>
+      <h1 class="fit-content-width center my-4">
+        <%= @cocktail.name %>
+        <%= link_to cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?"}, class: "remove-cocktail-btn" do %>
+          <i class="far fa-times-circle ml-2"></i>
+        <% end %>
+      </h1>
       <h6 class="fit-content-width center">INGREDIENTS</h6>
       <hr class="ingredients-title-border center mb-5">
       <div class="ml-md-5">
         <% @cocktail.doses.each do |dose| %>
           <p class="ingredient x-margins">
-            <%= link_to dose_path(dose), method: :delete, data: { confirm: "Are you sure?"}, class: "remove-ingredient-btn hidden" do %>
-              <i class="far fa-minus-square text-danger mr-2"></i>
+            <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, data: { confirm: "Are you sure?"}, class: "remove-ingredient-btn hidden" do %>
+              <i class="far fa-minus-square mr-2"></i>
             <% end %>
             <%= dose.description == "-" ? "" : dose.description %> <%= dose.ingredient.name %>
           </p>
         <% end %>
       </div>
       <p class="fit-content-width center mt-5">
-        <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
+        <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-danger" %>
       </p>
     </div>
   </div>

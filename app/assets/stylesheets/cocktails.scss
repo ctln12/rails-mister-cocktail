@@ -61,10 +61,17 @@ img.cocktail-photo {
   margin-right: auto;
 }
 
+.fa-times-circle {
+  vertical-align: super;
+  color: #585858;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
 .ingredients-title-border {
   width: 1.4rem;
   margin: auto auto auto 2rem;
-  border: 2px solid #626957;
+  border: 2px solid #c02b28;
 }
 
 .fit-content-width {
@@ -86,21 +93,14 @@ img.cocktail-photo {
 }
 
 .ingredient:hover {
+  cursor: pointer;
   .hidden {
     opacity: 1;
   }
 }
 
-.btn-success {
-  background-color: #4c7500;
-  border-color: #4c7500;
-  color: white;
-
-  &:hover {
-    background-color: rgba(76, 117, 0, 0.9);
-    border-color: rgba(76, 117, 0, 0.9);
-    color: white;
-  }
+.fa-minus-square {
+  color: #c02b28;
 }
 
 @media screen and (max-width: 600px) {
