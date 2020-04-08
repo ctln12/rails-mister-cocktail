@@ -14,13 +14,13 @@ a:hover {
   box-shadow: 2px 3px 4px #888;
   color: white;
   text-shadow: 1px 2px 3px black;
-  transition-duration: 0.8s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
 .home-card-link:hover .home-card {
   transform: scale(1.05);
-  transition-duration: 0.8s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
@@ -102,7 +102,7 @@ img.cocktail-photo {
   padding: 0;
   width: 35%;
   border-radius: 2px;
-  box-shadow: 1px 2px 3px #cecece;
+  box-shadow: 1px 2px 3px #bdbcbc;
   text-align: center;
 }
 
@@ -172,8 +172,8 @@ input#cocktail_photo:hover::before {
 }
 
 .new-cocktail .btn.btn-danger:hover {
-  background-color: #fd1015;
-  border: #fd1015;
+  background-color: #a50e0b;
+  border: #a50e0b;
 }
 
 .new-btn-home a {
@@ -193,6 +193,6 @@ input#cocktail_photo:hover::before {
 }
 
 .new-dose .btn.btn-danger:hover {
-  background-color: #fd1015;
-  border: #fd1015;
+  background-color: #a50e0b;
+  border: #a50e0b;
 }
