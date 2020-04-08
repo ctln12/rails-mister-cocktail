@@ -1,4 +1,10 @@
-<div class="cocktail-container mt-5">
+<div class="cocktail-container">
+  <div class="new-btn-home mt-3">
+    <%= link_to root_path do %>
+      <i class="fas fa-chevron-left"></i>
+      <span> Back to cocktails</span>
+    <% end %>
+  </div>
   <div class="row">
     <div class="col-lg-4 col-xl-5 img-frame">
       <span class="helper"></span>
@@ -7,7 +13,7 @@
     <div class="col-lg-8 col-xl-7">
       <h1 class="fit-content-width center my-4"><%= @cocktail.name %></h1>
       <h6 class="fit-content-width center">INGREDIENTS</h6>
-      <hr class="ingredients-title-border center mb-4">
+      <hr class="ingredients-title-border center mb-5">
       <div class="ml-md-5">
         <% @cocktail.doses.each do |dose| %>
           <p class="ingredient x-margins">
@@ -18,7 +24,7 @@
           </p>
         <% end %>
       </div>
-      <p class="fit-content-width center mt-4">
+      <p class="fit-content-width center mt-5">
         <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-success" %>
       </p>
     </div>
