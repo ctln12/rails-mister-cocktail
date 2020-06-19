@@ -1,46 +1,37 @@
-# README
+# Mister Cocktail
 
-Here are the necessary steps to get the
-application up and running.
+### Description
 
-*Ruby version*
+This project aims to build a 3-model app with a many to many relationship (n:n). It's a cocktail manager to store your favourite cocktails recipes.
 
-2.6.3
+### Technologies
 
-*Clone repository*
+*Languages:* Ruby, Javascript, CSS, HTML, erb
 
-- run `git@github.com:ctln12/rails-mister-cocktail.git name-of-folder` in the terminal
+*Database:* PostgreSQL
 
-*Database*
+*Frameworks:* Rails, Active Record
 
-- run `rails db:create` in the terminal
+*Service:* [Cloudinary](https://cloudinary.com/)
 
-- run `rails db:migrate` in the terminal
+*API:* [TheCocktailDB](https://www.thecocktaildb.com/)
 
-- run `rails db:seed` in the terminal
+### Key features
 
-*View locally*
+- View all the cocktails
+- View a cocktail's ingredients and doses
+- Add a new cocktail with name and photo
+- Add a new ingredient and its dose with a description
+- Delete a cocktail
+- Delete an ingredient and dose
 
-- run `rails server` in the terminal
+### Project status
 
-- go to `localhost:3000` in your browser
+The project is done.
 
-- use the commands `ctrl + C` to stop the server
+However some additional features could be added in the future such as sign up/login (devise), scoping actions depending on who is the cocktail's creator (pundit), saving favourite cocktails.
 
-*Deployment on Heroku*
+### Credits & Sources
 
-- sign up on [heroku](https://id.heroku.com/signup)
-
-- run `brew install heroku/brew/heroku` in the terminal to install on OS X
-
-- run `heroku login` in the terminal to login
-
-- run `heroku create $YOUR_APP_NAME -- region eu` to create an Heroku app
-
-- run `git push heroku master` to push your code to Heroku
-
-- run `heroku run rails db:migrate`
-
-- run `heroku run rails db:seed`
-
-- run `heroku open` to open the application in your browser
+- Cocktails images scraped from [BBC Good Food](https://www.bbcgoodfood.com)
+- Project built during [Le Wagon](https://www.lewagon.com) coding bootcamp batch#280 (2016)
